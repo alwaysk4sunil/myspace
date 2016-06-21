@@ -1,0 +1,23 @@
+@import '_header.scss','_newpage1.scss', '_container.scss', '_footer.scss';
+
+
+.container{
+	div{
+		width: 200px;
+		height: 500px;
+		background-color: yellow;
+		span{
+			display: block;
+			background-color: red;
+
+
+			h1{
+				color: #586932 + #907536;
+				font:{
+					size: 50px;
+					weight:bold;
+				}
+			}
+		}
+	}
+}
