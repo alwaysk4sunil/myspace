@@ -9,88 +9,61 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 
-<body ng-app="" ng-init="docs=[{
+<body ng-app="" ng-init="docs=[
+{
+  id:1,
   name:'Harish',
   age:20,
-  specialist:'EMT'
+  specialist:'hair'
 },
-{  
+{ 
+  id:2,
   name:'John',
   age:30,
   specialist:'Dental'
-  }]">
+  },
+{  
+  id:3,
+  name:'Deo',
+  age:35,
+  specialist:'cardiology'
+  },
+{ 
+  id:4,
+  name:'Luis',
+  age:50,
+  specialist:'nuornithology'
+  },
+{ 
+  id:5,
+  name:'Jfdf',
+  age:60,
+  specialist:'bone'
+  },
+{ 
+  id:6,
+  name:'Akhila',
+  age:24,
+  specialist:'skincare'
+  }
+
+  ]">
     <table class="table">
         <thead>
-            <th>Docs</th>
+            <th>Sl.No</th>
             <th>Name</th>
             <th>Age</th>
             <th>Specialist</th>
         </thead>
         <tbody>
             <tr ng-repeat="x in docs">
-                <th>1</th>
-                <td>{{docs.name}}</td>
-                <td>{{docs.age}}</td>
-                <td>{{docs.specialist}}</td>
+                <th>{{x.id}}</th>
+                <td>{{x.name}}</td>
+                <td>{{x.age}}</td>
+                <td>{{x.specialist}}</td>
             </tr>
-            <!--             <tr>
-                <th>2</th>
-                <td>{{doc2.name}}</td>
-                <td>{{doc2.age}}</td>
-                <td>{{doc2.specialist}}</td>
-            </tr> -->
         </tbody>
     </table>
 </body>
 
 </html>
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="./bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-</head>
-
-<body ng-app="" ng-init="docs=[{
-  name:'Harish',
-  age:20,
-  specialist:'EMT'
-},
-{  
-  name:'John',
-  age:30,
-  specialist:'Dental'
-  }]">
-    <table class="table">
-        <thead>
-            <th>Docs</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Specialist</th>
-        </thead>
-        <tbody>
-            <tr ng-repeat="x in docs">
-                <th>1</th>
-                <td>{{docs.name}}</td>
-                <td>{{docs.age}}</td>
-                <td>{{docs.specialist}}</td>
-            </tr>
-            <!--             <tr>
-                <th>2</th>
-                <td>{{doc2.name}}</td>
-                <td>{{doc2.age}}</td>
-                <td>{{doc2.specialist}}</td>
-            </tr> -->
-        </tbody>
-    </table>
-</body>
-
-</html>
- -->
